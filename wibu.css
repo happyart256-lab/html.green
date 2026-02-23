@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    min-height:100vh;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    filter:brightness(50%);
+    object-fit:cover;
+    z-index:-1;
+}
+
+nav{
+    background-color:#005F02;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);;
+}
+
+nav ul{
+
+    width:100%;
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+nav li{
+    height:50px;
+
+}
+
+nav a{
+    height:100%;
+    padding:0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    color:white;
+}
+
+nav a:hover{
+    background-color:#F2B50B;
+    border-radius: 50px;
+}
+
+
+nav li:first-child{
+
+    margin-right: auto;
+    
+   font-family: "Poppins", sans-serif;
+   font-size:20px;
+}
+
+.side-bar{
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:250px;
+    z-index:999;
+    background-color: #005f0270;
+    backdrop-filter:blur(10px);
+    box-shadow:-10px 0 10px rgba(0,0,0,0.1);
+    display:none;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+
+.side-bar li{
+    width:100%;
+}
+
+.side-bar a{
+    width:100%
+
+}
+
+.menu-button{
+display:none;
+
+}
+
+
+.hero{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:100vh;
+    padding:0 20px;
+
+}
+
+.hero-content h1 {
+    color:white;
+    font-size:3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.hero-content h2 {
+    color:white; 
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.btn{
+    color:white;
+    background-color: red;
+    height:36px;
+    width:autopx;
+    padding-left: 16px;
+    padding-right: 16px;
+    border:none;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: white;
+    color:red;
+
+}
+
+
+
+@media(max-width:800px){
+
+    .hideOnMobile{
+display: none;
+    }
+
+    .menu-button{
+        display:block;
+    }
+}
+
+
+@media(max-width:400px){
+  .side-bar{
+width:100%;
+    }
+}
