@@ -116,6 +116,7 @@ span{
     top:1%;
     left:95%;
     font-size:30px;
+    
 }
 
 
@@ -176,10 +177,30 @@ display: none;
     }
     .popup{
     width:90%;
-    max-width:1200px;
-    height:110%;
-margin:auto;
+    max-width:300px;
+    height: auto;
 }
+
+.popup h1{
+    font-size: 20px;
+}
+
+.popup h2{
+    font-size: 16px;
+}
+span{
+    position:fixed;
+    top:1%;
+    left:95%;
+    font-size:13px;
+}
+
+  .popup p{
+    font-size:10px;
+ }
+  .popup ol{
+    font-size:10px;
+ }
 }
 
 
