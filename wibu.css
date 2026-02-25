@@ -75,6 +75,7 @@ nav li:first-child{
     flex-direction:column;
     align-items:flex-start;
     justify-content: flex-start;
+    
 }
 
 .side-bar li{
@@ -89,6 +90,32 @@ nav li:first-child{
 .menu-button{
 display:none;
 
+}
+
+.popup{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border:1px solid white;
+    border-radius:10px;
+    z-index:10000;
+    background-color:white;
+    width:800px;
+    height: auto;
+    padding-left:20px;
+    display:none;
+    justify-content:space-between;
+    align-items:center;
+}
+.close{
+    cursor: pointer;
+}
+span{
+    position:fixed;
+    top:1%;
+    left:95%;
+    font-size:30px;
 }
 
 
@@ -147,6 +174,12 @@ display: none;
     .menu-button{
         display:block;
     }
+    .popup{
+    width:90%;
+    max-width:1200px;
+    height:110%;
+margin:auto;
+}
 }
 
 
@@ -154,4 +187,8 @@ display: none;
   .side-bar{
 width:100%;
     }
+
 }
+
+
+
