@@ -151,11 +151,14 @@ span{
     width:autopx;
     padding-left: 16px;
     padding-right: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     border:none;
     border-radius: 20px;
     font-weight: 700;
     cursor: pointer;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .btn:hover{
