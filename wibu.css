@@ -185,21 +185,21 @@ display: none;
 }
 
 .popup h1{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .popup h2{
-    font-size: 16px;
+    font-size: 25px;
 }
 span{
     position:fixed;
-    top:1%;
-    left:95%;
-    font-size:13px;
+    top:0%;
+    left:90%;
+    font-size:30px;
 }
 
   .popup p{
-    font-size:10px;
+    font-size:12px;
  }
   .popup ol{
     font-size:10px;
