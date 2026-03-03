@@ -5,6 +5,7 @@ body{
     background:#005f0270;
 }
 
+
 .card-container{
 
     display: grid;
@@ -16,6 +17,7 @@ body{
 .card{
     background:#005f02;
     border-radius: 15px;
+   
     overflow:hidden;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
     transition:0.3s ease;
@@ -60,4 +62,8 @@ button:hover{
     background:white;
     color:red;
 
+}
+
+footer a{
+    font-weight: bold;
 }
