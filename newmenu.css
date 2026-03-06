@@ -76,18 +76,25 @@ text-align:left;
 
 }
 
-.card-content small{
+ .card-content button{
 margin-top:auto;
 background:red;
 color:white;
 padding:5px 10px;
-text-decoration: none;
 font-size: 14px;
-display:inline-block;
+cursor: pointer;
+border:none;
+  
+}
+button:hover{
+     background-color: white;
+    color:red  ;
+   
+  
 
 }
-
-small a{
+button a{
+    
     text-decoration: none;
     color:white;
 }
