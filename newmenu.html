@@ -5,11 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green juice</title>
     <link rel="stylesheet" href="./newmenu.css">
+     <link rel="stylesheet" href="./wibu.css">
+    
 </head>
 <body>
     
+<nav>
+    
+        <ul class="side-bar">
+<li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+<li> <a href="./index.html">Home</a></li>
+<li> <a href="#"onclick="openPopup()">About Us</a></li>
+<li> <a href="./menu.html">Menu</a></li>
+<li> <a href="./testimonial.html">Testimonials</a></li>
+<li> <a href="#">Gallery</a></li>
+<li> <a href="./contactus.html">Contact</a></li>
+
+</ul>
+
+<ul>
+<li> <a href="#">FRESH HERBAL GREEN JUICE</a></li>
+<li class="hideOnMobile"> <a href="#">Home</a></li>
+<li class="hideOnMobile"> <a  href="#" onclick="openPopup()">About Us</a></li>
+<li class="hideOnMobile"> <a href="./menu.html">Menu</a></li>
+<li class="hideOnMobile"> <a href="./testimonial.html">Testimonials</a></li>
+<li class="hideOnMobile"> <a href="#">Gallery</a></li>
+<li class="hideOnMobile"> <a href="./contactus.html">Contact</a></li>
+<li class="menu-button" onclick=showSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+</ul>
+ </nav> 
+<!--About US ,Page-->
+<div class="about-all"></div>
+<div  class="popup">
+    <div class="popup-content">
+        <span class="close"
+         onclick=closePopup()>&times;</span>
+     <h1>ABOUT US</h1>
+
+        <p>At FRESH HERBAL GREEN JUICE,
+        we believe that nature provides powerful solutions for a healthier life.
+        Our mission is to support your body's natural wellness process through 
+        100% natural,carefully selected herbal ingredients.
+        
+        </p>
+
+<p>We are committed to producing high-quality juice made from fresh 
+    herbs and fruits,
+    with no chemicals or other artificial additives.
+         </p>
+
+         <h2>🌱OUR PURPOSE</h2>
+         <P>Our goal is simple:To help people improve their health naturally.</P>
 
 
+         <h2>🏆EXPERIENCE & TRUST</h2>
+         <P>
+            Over the years, we have served many satisfied customers who trust our products
+            as part of their daily wellness routine.
+            Our growing community continues to recommend us because of:
+         </P>
+
+         <ol>
+          <li>Natural Ingredients</li>
+         <li>Super Effective Remedies</li>
+        <li>Safe and hygienic preparation processs</li>
+        <li>Positive customer experience</li>
+
+         </ol>
+
+         <h2>🌍OUR COMMITMENT</h2>
+         <ol>
+
+        <li>Using fresh,natural ingredients</li>
+        <li>Mantaining strict hygiene during production</li>
+        <li>Providing honest wellness guidence</li>
+        <li>Continuosly improving our formulas</li>
+         </ol>
+
+        
+               <h2> Why choose FRESH HERBAL GREEN JUICE?</h2>
+          
+           <p> Because we combine Nature,Quality,trust and Experience.<br>
+
+            We believe that a healthy body leads to a powerful life.
+
+           </p>
+
+            <h2>OUR BRANCHES</h2>
+            <P>We are currently in 2 locations in Kampala:
+                1 at (ARUA PARK PLAZA) opposite BABY COACH BUS PARK,
+                and another one at (PEOPLE'S PLAZA)-Ben Kiwanuka Street.
+            </P>
+        </div>
+
+     </div>
+</div>
 
 <!-- WHY CHOOSE US -->
 
@@ -145,6 +236,27 @@
 
 <script>
 
+    /* JS code for navbar & sidebar */
+    function showSidebar(){
+            const sidebar = document.querySelector('.side-bar')
+            sidebar.style.display='flex'
+        }
+
+        function hideSidebar(){ const sidebar = document.querySelector('.side-bar')
+            sidebar.style.display='none'
+
+        }
+        
+        function openPopup(){
+            const aboutUs = document.querySelector('.popup')
+            aboutUs.style.display='flex'
+        }
+
+        function closePopup(){
+             const aboutUs = document.querySelector('.popup')
+            aboutUs.style.display='none'
+
+        }
 /* simple JS animation */
 
 const cards = document.querySelectorAll(".card");
