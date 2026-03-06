@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body>
+  <h2>Order Fresh Juice</h2>
+
+<input type="text" id="name" placeholder="Your Name"><br><br>
+
+<input type="text" id="phone" placeholder="Phone Number"><br><br>
+
+<label>Select Juice:</label><br>
+
+<input type="checkbox" value="Fresh Green Detox Booster" class="juice"> Detox Booster<br>
+<input type="checkbox" value="Mango Juice" class="juice"> Mango Juice<br>
+<input type="checkbox" value="Pineapple Juice" class="juice"> Pineapple Juice<br><br>
+
+<input type="number" id="qty" placeholder="Quantity"><br><br>
+
+<input type="text" id="location" placeholder="Delivery Location"><br><br>
+
+<button onclick="sendOrder()">Place Order</button> 
+<script>
+
+function sendOrder(){
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let qty = document.getElementById("qty").value;
+let location = document.getElementById("location").value;
+
+let juices = document.querySelectorAll(".juice:checked");
+
+let selected = "";
+
+juices.forEach((j)=>{
+selected += "- " + j.value + "%0A";
+});
+
+let message =
+"New Juice Order 🍹%0A%0A" +
+"Name: " + name + "%0A" +
+"Phone: " + phone + "%0A%0A" +
+"Products:%0A" +
+selected +
+"%0AQuantity: " + qty +
+"%0A%0ADelivery: " + location;
+
+let whatsappNumber = "2567XXXXXXXX";
+
+let url = "https://wa.me/" + whatsappNumber + "?text=" + message;
+
+window.open(url, "_blank");
+
+}
+
+</script> 
+</body>
+</html>

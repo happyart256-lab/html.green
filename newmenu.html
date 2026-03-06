@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green juice</title>
+    <link rel="stylesheet" href="./newmenu.css">
+</head>
+<body>
+    
+
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="section">
+
+
+<h2>FRESH HERBAL GREEN JUICE</h2>
+
+<p>Full-Dose Cure Juice.</p>
+
+
+<div class="cards">
+
+<!-- CARD 1 -->
+ <div class="card">
+<div class="card-img">
+    <img src="./ulcers.png" alt="HEAL ULCERS ">
+</div>
+<div class="card-content">
+
+<h3>STOMACH ULCERS</h3>
+<p>Heal ulcers Naturally.</p>
+<small><a href="https://docs.google.com/forms/d/e/1FAIpQLSfSnaAwYO
+    WrTqfElqPJcVENbj1J-_A_izedep5zVOVk4MzZPg/viewform?usp=publish-
+    editor">View More</a></small>
+</div>
+</div>
+
+
+<!-- CARD 2 -->
+
+<div class="card">
+<div class="card-img">
+    <img src="./toxins out.png" alt="detox your body ">
+</div>
+<div class="card-content">
+
+<h3>DETOX BODY CLEANSER</h3>
+<p>Cleanse / Repair / Rejuvenate .</p>
+<small>View More</small>
+</div>
+</div>
+
+<!-- CARD 3 -->
+
+
+<div class="card">
+<div class="card-img">
+    <img src="./weightloss.png" alt="LOOSE WEIGHT">
+</div>
+<div class="card-content">
+
+<h3>WEIGHT LOSS JUICE</h3>
+<p>Loose Weight Naturally.</p>
+<small>View More</small>
+</div>
+</div>
+<!-- CARD 4 -->
+
+<div class="card">
+<div class="card-img">
+    <img src="./infections.png" alt="Heal infections naturally ">
+</div>
+<div class="card-content">
+
+<h3>INFECTION CLEANSER</h3>
+<p>Heal Infections Naturally.</p>
+<small>View More</small>
+</div>
+</div>
+
+<!-- CARD 5 -->
+
+<div class="card">
+<div class="card-img">
+     <img src="./diabetes.png" alt="Normalize Diabetes naturally ">
+</div>
+<div class="card-content">
+<h3>DIABETES</h3>
+<p>Normalize your Diabetes.</p>
+<small>View More</small>
+</div>
+</div>
+
+<!-- CARD 6 -->
+
+<div class="card">
+<div class="card-img">
+     <img src="./pressure.png" alt="Normalize Blood pressure naturally ">
+</div>
+<div class="card-content">
+<h3>BLOOD PRESSURE</h3>
+<p>Normalize your Blood Pressure.</p>
+<small>View More</small>
+</div>
+</div>
+
+
+<!-- CARD 7 -->
+
+<div class="card">
+<div class="card-img">Image</div>
+<div class="card-content">
+<h3>BACKPAIN & JOINTS</h3>
+
+<p>Natural Inner Repair.</p>
+<small>View More</small>
+</div>
+</div>
+
+<!-- CARD 8 -->
+
+<div class="card">
+<div class="card-img">Image</div>
+<div class="card-content">
+<h3>COUGH & FLU FIGHTER</h3>
+<p>Fast Relief from Cough and Flue.</p>
+<small>View More</small>
+</div>
+</div>
+<!-- CARD 9 -->
+
+<div class="card">
+<div class="card-img">Image</div>
+<div class="card-content">
+<h3>CD4 COUNT BOOSTER(HIV/AIDS)</h3>
+<p>Stay Strong. Stay Healthy.</p>
+<small>View More</small>
+</div>
+</div>
+</div>
+
+</section>
+
+
+<script>
+
+/* simple JS animation */
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card,index)=>{
+card.style.opacity = "0";
+card.style.transform = "translateY(30px)";
+
+setTimeout(()=>{
+card.style.transition="0.6s";
+card.style.opacity="1";
+card.style.transform="translateY(0)";
+}, index*200);
+
+});
+
+</script>
+
+</body>
+</html>

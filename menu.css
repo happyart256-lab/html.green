@@ -64,6 +64,16 @@ button:hover{
 
 }
 
+button a{
+    text-decoration: none;
+    color:white;
+}
+
+button a:hover{
+    background:white;
+    color:red;
+
+}
 footer a{
     font-weight: bold;
 }
